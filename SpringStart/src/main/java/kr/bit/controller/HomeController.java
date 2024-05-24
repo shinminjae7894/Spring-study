@@ -33,7 +33,7 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "home"; // jsp, jsp에서 EL로 꺼내감
 	}
 	
 }
