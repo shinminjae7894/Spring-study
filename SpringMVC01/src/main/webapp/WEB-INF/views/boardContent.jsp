@@ -18,28 +18,29 @@
   <div class="panel panel-default">
     <div class="panel-heading">BOARD</div>
     <div class="panel-body">
-    	<form action="boardInsert.do" method="post">
-	    	<table class="table">
-	    		<tr>
-	    			<td>제목</td>
-	    			<td><input type="text" name="title" class="form-control"/></td>
-	    		</tr>
-	    		<tr>
-	    			<td>내용</td>
-	    			<td><textarea rows="7" class="form-control" name="content"></textarea></td>
-	    		</tr>
-	    		<tr>
-	    			<td>작성자</td>
-	    			<td><input type="text" name="writer" class="form-control"/></td>
-	    		</tr>
-	    		<tr>
-	    			<td colspan="2" align="center">
-	    				<button type="submit" class="btn btn-success btn-sm">등록</button>
-	    				<button type="reset" class="btn btn-warning btn-sm">취소</button>
-	    			</td>
-	    		</tr>
-	    	</table>
-    	</form>
+    	<table class="table">
+    		<tr>
+    			<td>제목</td>
+    			<td>${vo.title}</td>
+    		</tr>
+    		<tr>
+    			<td>내용</td>
+    			<td>${vo.content}</td>
+    		</tr>
+    		<tr>
+    			<td>작성자</td>
+    			<td>${vo.writer}</td>
+    		</tr>
+    		<tr>
+    			<td>작성일</td>
+    			<td>${vo.indate}</td>
+    		</tr>
+    		<td colspan="2" align="center">
+    			<button class="btn btn-primary btn-sm">수정화면</button>
+    			<button class="btn btn-warning btn-sm">삭제</button>
+    			<button class="btn btn-info btn-sm">목록</button>
+    		</td>
+    	</table>
     </div>
     <div class="panel-footer">인프런_스프1탄_신민재</div>
   </div>

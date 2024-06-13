@@ -33,7 +33,7 @@
 						<!-- 반복문 -->
 						<tr>
 							<td>${vo.idx}</td>
-							<td>${vo.title}</td>
+							<td><a href="boardContent.do?idx=${vo.idx}">${vo.title}</a></td> <!-- get방식 -->
 							<td>${vo.writer}</td>
 							<td>${vo.indate}</td>
 							<td>${vo.count}</td>
